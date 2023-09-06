@@ -37,5 +37,5 @@ function calification(n) {
 
   return message;
 }
-
+console.log(calification(1));
 modulke.exports = calification;
