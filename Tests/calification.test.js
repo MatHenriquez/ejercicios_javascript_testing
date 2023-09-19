@@ -14,13 +14,13 @@ describe("Debe retornar 'muy deficiente' si n es 0, 1 o 2:", () => {
   });
 });
 
-describe("Debe retornar 'Insuficiente", () => {
+describe("Debe retornar 'Insuficiente' si n es 3 o 4:", () => {
   test("Debe retornar 'Insuficiente' si n es 3", () => {
-    expect(calification(0)).toBe("Muy deficiente");
+    expect(calification(0)).toBe("Insuficiente");
   });
 
   test("Debe retornar 'Insuficiente' si n es 4", () => {
-    expect(calification(1)).toBe("Muy deficiente");
+    expect(calification(1)).toBe("Insuficiente");
   });
 });
 
