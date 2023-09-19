@@ -42,6 +42,10 @@ function validateCalification(n) {
   if (typeof n !== "number") {
     throw new Error("n debe ser de tipo number");
   }
+
+  if (n < 0) {
+    throw new Error("n debe ser mayor o igual que 0");
+  }
 }
 
 module.exports = calification;
