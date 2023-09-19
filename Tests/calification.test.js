@@ -59,27 +59,27 @@ describe("Manejo de errores:", () => {
     expect(calification).toBeDefined();
   });
   test("Debe mostrar un mensaje de error si n no es un número", () => {
-    expect(calification("Hola, mundo!")).toThrowError(
+    expect(() =>calification("Hola, mundo!")).toThrowError(
       Error,
       "n debe ser de tipo number"
     );
   });
   test("Debe mostrar un mensaje de error si n es menor que 0", () => {
-    expect(calification(-1)).toThrowError(
+    expect(() => calification(-1)).toThrowError(
       Error,
       "n debe ser mayor o igual que 0"
     );
   });
 
   test("Debe mostrar un mensaje de error si n es mayor que 10", () => {
-    expect(calification(11)).toThrowError(
+    expect(() =>calification(11)).toThrowError(
       Error,
       "n debe ser menor o igual que 10"
     );
   });
 
   test("Debe mostrar un mensaje de error si n es decimal", () => {
-    expect(calification(5.5)).toThrowError(
+    expect(() =>calification(5.5)).toThrowError(
       Error,
       "n debe ser un número entero"
     );

@@ -9,9 +9,8 @@ Pide una nota (número). Muestra la calificación según la nota:
 */
 
 function calification(n) {
-  const isValid = nIsValid(n);
 
-  if (!isValid) return isValid;
+  nIsValid(n);
 
   let message;
 
