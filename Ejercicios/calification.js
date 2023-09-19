@@ -46,6 +46,10 @@ function validateCalification(n) {
   if (n < 0) {
     throw new Error("n debe ser mayor o igual que 0");
   }
+
+  if (n > 10) {
+    throw new Error("n debe ser menor o igual que 10");
+  }
 }
 
 module.exports = calification;
