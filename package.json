@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jest": "^29.7.0",
     "readline-sync": "^1.4.10"
   }
 }
