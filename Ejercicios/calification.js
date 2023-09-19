@@ -9,10 +9,9 @@ Pide una nota (número). Muestra la calificación según la nota:
 */
 
 function calification(n) {
-
   const isValid = nIsValid(n);
 
-  if(!isValid) return isValid;
+  if (!isValid) return isValid;
 
   let message;
 
@@ -56,7 +55,7 @@ function nIsValid(n) {
     throw new Error("n debe ser menor o igual que 10");
   }
 
-  if(Math.floor(n) !== n) {
+  if (Math.floor(n) !== n) {
     throw new Error("n debe ser un número entero");
   }
 

@@ -66,16 +66,22 @@ describe("Manejo de errores:", () => {
   });
   test("Debe mostrar un mensaje de error si n es menor que 0", () => {
     expect(calification(-1)).toThrowError(
-      Error,"n debe ser mayor o igual que 0");
+      Error,
+      "n debe ser mayor o igual que 0"
+    );
   });
 
   test("Debe mostrar un mensaje de error si n es mayor que 10", () => {
     expect(calification(11)).toThrowError(
-      Error,"n debe ser menor o igual que 10");
+      Error,
+      "n debe ser menor o igual que 10"
+    );
   });
 
   test("Debe mostrar un mensaje de error si n es decimal", () => {
     expect(calification(5.5)).toThrowError(
-      Error,"n debe ser un número entero");
+      Error,
+      "n debe ser un número entero"
+    );
   });
 });
