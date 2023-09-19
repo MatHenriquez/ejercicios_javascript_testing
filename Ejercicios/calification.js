@@ -50,6 +50,12 @@ function validateCalification(n) {
   if (n > 10) {
     throw new Error("n debe ser menor o igual que 10");
   }
+
+  if(Math.floor(n) !== n) {
+    throw new Error("n debe ser un número entero");
+  }
+
+  return true;
 }
 
 module.exports = calification;
