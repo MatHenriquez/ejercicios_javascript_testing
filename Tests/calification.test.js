@@ -26,10 +26,10 @@ describe("Debe retornar 'Insuficiente' si n es 3 o 4:", () => {
 
 describe("Debe retornar 'Suficiente' si n es 5 o 6", () => {
   test("Debe retornar 'Suficiente' si n es 5", () => {
-    expect(calification(2)).toBe("Muy deficiente");
+    expect(calification(5)).toBe("Suficiente");
   });
   test("Debe retornar 'Suficiente' si n es 6", () => {
-    expect(calification(0)).toBe("Muy deficiente");
+    expect(calification(6)).toBe("Suficiente");
   });
 });
 
