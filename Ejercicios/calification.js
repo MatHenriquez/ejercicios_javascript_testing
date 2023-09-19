@@ -9,6 +9,11 @@ Pide una nota (número). Muestra la calificación según la nota:
 */
 
 function calification(n) {
+
+  const isValid = nIsValid(n);
+
+  if(!isValid) return isValid;
+
   let message;
 
   switch (n) {
@@ -38,7 +43,7 @@ function calification(n) {
   return message;
 }
 
-function validateCalification(n) {
+function nIsValid(n) {
   if (typeof n !== "number") {
     throw new Error("n debe ser de tipo number");
   }
