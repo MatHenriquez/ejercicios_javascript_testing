@@ -42,3 +42,13 @@ describe("Debe retornar 'Bien' si n es 7 u 8", () => {
     expect(calification(8)).toBe("Bien");
   });
 });
+
+describe("Debe retornar 'Sobresaliente' si n es 9 o 10", () => {
+  test("Debe retornar 'Sobresaliente' si n es 9", () => {
+    expect(calification(9)).toBe("Sobresaliente");
+  });
+
+  test("Debe retornar 'Sobresaliente' si n es 10", () => {
+    expect(calification(10)).toBe("Sobresaliente");
+  });
+});
