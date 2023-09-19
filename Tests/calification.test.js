@@ -12,14 +12,6 @@ describe("Debe retornar 'muy deficiente' si n es 0, 1 o 2:", () => {
   test("Debe retornar 'Muy deficiente' si n es 2", () => {
     expect(calification(2)).toBe("Muy deficiente");
   });
-
-  test("Debe retornar 'Suficiente' si n es 1", () => {
-    expect(calification(1)).toBe("Muy deficiente");
-  });
-
-  test("Debe retornar 'muy deficiente' si n es 2", () => {
-    expect(calification(2)).toBe("Muy deficiente");
-  });
 });
 
 describe("Debe retornar 'Insuficiente", () => {
