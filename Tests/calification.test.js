@@ -32,3 +32,13 @@ describe("Debe retornar 'Suficiente' si n es 5 o 6", () => {
     expect(calification(0)).toBe("Muy deficiente");
   });
 });
+
+describe("Debe retornar 'Bien' si n es 7 u 8", () => {
+  test("Debe retornar 'Bien' si n es 7", () => {
+    expect(calification(7)).toBe("Bien");
+  });
+
+  test("Debe retornar 'Bien' si n es 8", () => {
+    expect(calification(8)).toBe("Bien");
+  });
+});
