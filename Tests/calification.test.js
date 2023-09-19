@@ -1,0 +1,1 @@
+const calification = require('../Ejercicios/calification');
