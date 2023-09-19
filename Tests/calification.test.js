@@ -60,5 +60,7 @@ describe("Manejo de errores:", () => {
   test("Debe mostrar un mensaje de error si n no es un número", () => {
     expect(calification("Hola, mundo!")).toBe("n debe ser de tipo number");
   });
-  
+  test("Debe mostrar un mensaje de error si n es menor que 0", () => {
+    expect(calification(-1)).toBe("n debe ser mayor o igual que 0");
+  });
 });
