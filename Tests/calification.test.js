@@ -52,3 +52,9 @@ describe("Debe retornar 'Sobresaliente' si n es 9 o 10", () => {
     expect(calification(10)).toBe("Sobresaliente");
   });
 });
+
+describe("Manejo de errores:", () => {
+  test("Debe mostrar un mensaje de error si n no es un número", () => {
+    expect(calification("Hola, mundo!")).toBe("n debe ser de tipo number");
+  });
+});
