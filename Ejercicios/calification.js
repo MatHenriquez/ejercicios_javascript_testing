@@ -38,4 +38,10 @@ function calification(n) {
   return message;
 }
 
+function validateCalification(n) {
+  if (typeof n !== "number") {
+    throw new Error("n debe ser de tipo number");
+  }
+}
+
 module.exports = calification;
