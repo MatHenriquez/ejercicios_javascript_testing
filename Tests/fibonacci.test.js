@@ -29,3 +29,25 @@ describe("Debe retornar el número de la serie de Fibonacci según la posición:
     expect(fibonacci(6)).toBe(8);
   });
 });
+
+describe("Manejo de errores:", () => {
+  test("Debe existir la función 'fibonacci'", () => {
+    expect(fibonacci).toBeDefined();
+  });
+
+  test("Debe lanzar un error si n no es un número", () => {
+    expect(() => fibonacci("a")).toBe("Error");
+  });
+
+  test("Debe lanzar un error si n es menor que 0", () => {
+    expect(() => fibonacci(-1)).toBe("Error");
+  });
+
+  test("Debe lanzar un error si n es mayor que 10", () => {
+    expect(() => fibonacci(11)).toBe("Error");
+  });
+
+  test("Debe lanzar un error si n no es un número entero", () => {
+    expect(() => fibonacci(1.5)).toBe("Error");
+  });
+});
