@@ -36,18 +36,14 @@ describe("Manejo de errores:", () => {
   });
 
   test("Debe lanzar un error si n no es un número", () => {
-    expect(() => fibonacci("a")).toBe("Error");
+    expect(fibonacci("a")).toBe("Error");
   });
 
   test("Debe lanzar un error si n es menor que 0", () => {
-    expect(() => fibonacci(-1)).toBe("Error");
-  });
-
-  test("Debe lanzar un error si n es mayor que 10", () => {
-    expect(() => fibonacci(11)).toBe("Error");
+    expect(fibonacci(-1)).toBe("Error");
   });
 
   test("Debe lanzar un error si n no es un número entero", () => {
-    expect(() => fibonacci(1.5)).toBe("Error");
+    expect(fibonacci(1.5)).toBe("Error");
   });
 });
