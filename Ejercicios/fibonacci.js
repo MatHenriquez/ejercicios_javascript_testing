@@ -9,10 +9,8 @@ function fibonacci(n) {
     result = n === 0 || n === 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
   }
 
-  console.log("result ", typeof result, result)
+  console.log("result ", typeof result, result);
   return result;
 }
-
-console.log(fibonacci(0.9));
 
 module.exports = fibonacci;
