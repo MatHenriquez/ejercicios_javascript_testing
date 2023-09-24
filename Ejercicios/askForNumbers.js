@@ -3,10 +3,10 @@ function countNumbers() {
   let total = 0;
   let input;
   do {
-    input = prompt("Introduce un número");
-    let inputNumber = parseInt(input);
-    if (inputNumber) total *= inputNumber;
-  } while (input !== "");
+    input = prompt("Introduce un número") || false;
+    if (input) total += Number(input);
+  } while (input);
 
+  alert(total)
   return total;
 }
