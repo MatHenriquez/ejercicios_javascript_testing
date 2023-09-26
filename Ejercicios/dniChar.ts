@@ -42,12 +42,14 @@ class Char {
   };
 
   public charGetter(): string {
-    return this.dictionary[module];
+    return this.dictionary[this.module];
   }
 }
 
 function dniChar(dni: number): string {
   const module: number = dni % 23;
-  const response:Char = new Char(module);
+  const response: Char = new Char(module);
   return response.charGetter();
 }
+
+console.log(dniChar(38885811));
