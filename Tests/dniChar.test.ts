@@ -1,5 +1,5 @@
 import { describe, it, expect } from '@jest/globals';
-import dniChar from '../Ejercicios/dniChar';
+const dniChar = require('../Ejercicios/dniChar');
 
 describe('dniChar', () => {
   it('Debe devolver la letra correcta para un número de DNI válido', () => {

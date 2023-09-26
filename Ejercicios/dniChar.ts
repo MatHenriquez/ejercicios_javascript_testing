@@ -52,3 +52,5 @@ function dniChar(dni: number): string {
   return response.charGetter();
 }
 
+module.exports = dniChar;
+
