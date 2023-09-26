@@ -3,8 +3,8 @@ const validateDni = require("../Ejercicios/dniChar");
 
 describe("Funcionamiento:", () => {
   it("Debe devolver la letra correcta para un número de DNI válido", () => {
-    const dni = 123456789;
-    const expectedLetter = "B";
+    const dni = 12345678;
+    const expectedLetter = "Z";
     const actualLetter = validateDni(dni);
     expect(actualLetter).toBe(expectedLetter);
   });

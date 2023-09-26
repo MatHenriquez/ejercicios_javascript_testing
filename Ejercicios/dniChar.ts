@@ -64,7 +64,7 @@ function validateDni(dni: number): string {
     errorMessage = "El DNI debe ser un número de 6 a 8 dígitos";
   }
 
-  const isValid: string = errorMessage.length < 0 ? errorMessage : dniChar(dni);
+  const isValid: string = errorMessage.length > 0 ? errorMessage : dniChar(dni);
   return isValid;
 }
 
