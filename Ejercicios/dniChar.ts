@@ -68,4 +68,5 @@ function validateDni(dni: number): string {
   return isValid;
 }
 
-module.exports = dniChar;
+
+module.exports = validateDni;
