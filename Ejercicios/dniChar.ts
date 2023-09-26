@@ -41,12 +41,13 @@ class Char {
     22: "E",
   };
 
-  public charGetter(module: number): string {
+  public charGetter(): string {
     return this.dictionary[module];
   }
 }
 
 function dniChar(dni: number): string {
   const module: number = dni % 23;
-  return "Hola";
+  const response:Char = new Char(module);
+  return response.charGetter();
 }
