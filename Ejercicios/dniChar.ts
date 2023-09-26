@@ -9,3 +9,7 @@
 // Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
 // Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
 // Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+
+function dniChar(dni: number): string {
+  return "Hola";
+}
