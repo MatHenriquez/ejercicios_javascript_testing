@@ -9,44 +9,44 @@
 // Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
 // Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar.
 // Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+class Char {
+  constructor(module: number) {
+    this.module = module;
+  }
+
+  private module: number;
+  private dictionary = {
+    0: "T",
+    1: "R",
+    2: "W",
+    3: "A",
+    4: "G",
+    5: "M",
+    6: "Y",
+    7: "F",
+    8: "P",
+    9: "D",
+    10: "X",
+    11: "B",
+    12: "N",
+    13: "J",
+    14: "Z",
+    15: "S",
+    16: "Q",
+    17: "V",
+    18: "H",
+    19: "L",
+    20: "C",
+    21: "K",
+    22: "E",
+  };
+
+  public charGetter(module: number): string {
+    return this.dictionary[module];
+  }
+}
 
 function dniChar(dni: number): string {
-  class Char {
-    constructor(module: number) {
-      this.module = module;
-    }
-
-    public module: number;
-    public dictionary = {
-      0: "T",
-      1: "R",
-      2: "W",
-      3: "A",
-      4: "G",
-      5: "M",
-      6: "Y",
-      7: "F",
-      8: "P",
-      9: "D",
-      10: "X",
-      11: "B",
-      12: "N",
-      13: "J",
-      14: "Z",
-      15: "S",
-      16: "Q",
-      17: "V",
-      18: "H",
-      19: "L",
-      20: "C",
-      21: "K",
-      22: "E",
-    };
-
-    charGetter(module: number): string {
-      return;
-    }
-  }
   const module: number = dni % 23;
   return "Hola";
 }
