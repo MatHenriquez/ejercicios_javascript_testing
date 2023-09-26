@@ -15,7 +15,7 @@ class Char {
   }
 
   private module: number;
-  private dictionary = {
+  private dictionary: { [key: number]: string } = {
     0: "T",
     1: "R",
     2: "W",
