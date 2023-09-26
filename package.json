@@ -14,5 +14,8 @@
   "dependencies": {
     "jest": "^29.7.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.5"
   }
 }
