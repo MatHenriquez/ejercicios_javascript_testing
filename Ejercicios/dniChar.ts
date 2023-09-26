@@ -52,5 +52,20 @@ function dniChar(dni: number): string {
   return response.charGetter();
 }
 
-module.exports = dniChar;
+function validateDni(dni: number): boolean {
+  let errorMessage: string = "";
+  if (typeof dni !== "number") {
+    errorMessage = "El DNI debe ser un número";
+  } else if (dni < 0) {
+    errorMessage = "El DNI debe ser un número positivo";
+  } else if (dni % 1 !== 0) {
+    errorMessage = "El DNI debe ser un número entero";
+  } else if (dni < 100000 || dni > 99999999) {
+    errorMessage = "El DNI debe ser un número de 6 a 8 dígitos";
+  }
 
+  const isValid: boolean = errorMessage.length > 0 ? true : false;
+  return isValid;
+}
+
+module.exports = dniChar;
