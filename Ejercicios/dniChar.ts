@@ -52,4 +52,3 @@ function dniChar(dni: number): string {
   return response.charGetter();
 }
 
-console.log(dniChar(38885811));
