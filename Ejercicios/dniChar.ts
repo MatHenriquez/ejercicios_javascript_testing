@@ -52,7 +52,7 @@ function dniChar(dni: number): string {
   return response.charGetter();
 }
 
-function validateDni(dni: number): boolean {
+function validateDni(dni: number): string {
   let errorMessage: string = "";
   if (typeof dni !== "number") {
     errorMessage = "El DNI debe ser un número";
@@ -64,7 +64,7 @@ function validateDni(dni: number): boolean {
     errorMessage = "El DNI debe ser un número de 6 a 8 dígitos";
   }
 
-  const isValid: boolean = errorMessage.length > 0 ? true : false;
+  const isValid: string = errorMessage.length < 0 ? errorMessage : dniChar(dni);
   return isValid;
 }
 
